@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>My Journal</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+  
+<body>
+  <button id="backButton" onclick="location.href='index.html'" type="button">Back</button>
+  
+  <!-- Displays Journal -->
+  <img id="sparkle" src="Sparkle.png" width="400" height="400">
+  <img id="sparkle2" src="Sparkle.png" width="400" height="400">
+
+  <h1>My Journal</h1>
+  <div class="container">
+      <div class="promptsContainer" id="promptsContainer">
+    </div>
+  </div>
+  <p id="currentDate"></p>
+  <div class="container">
+    <div class="savedEntriesContainer" id="entriesContainer">
+      
+      <!-- Displays Past Journal -->
+    <div class="savedEntriesContainer">
+      <div id="entryContainer">entry</div>
+      <div id="entryContainer">entry</div>
+    </div>
+
+  </div>   
+  <script src="journal.js"></script>
+</body>
+</html>

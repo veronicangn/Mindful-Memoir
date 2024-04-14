@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Memoirs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layout">
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#prompt">Journal Prompt</a></li>
+        <li><a href="#workout">Workout</a></li>
+        <li><a href="#meditation">Meditation</a></li>
+        <li><a href="#quote">Quote</a></li>
+        <li><a href="journal.html"><b>My Journal</b></a></li>
+      </ul>
+    </nav>
+    <h1>Mindful Memoir</h1>
+
+    <!-- Journal Section -->
+    <section id="prompt">
+      <h2><b>Prompt of the Day</b></h2>
+      <img id="sparkle" src="Sparkle.png" width="400" height="400">
+      <img id="sparkle2" src="Sparkle.png" width="400" height="400">
+      <!-- Display the current date & time -->
+      <p id="currentDate"></p>
+      <!-- Prompt container -->
+      <div id="promptContainer"></div>
+      <!-- Generate Prompt Button -->
+      <button id="generatePrompt">Generate New Prompt</button>
+      <div id="entryContainer">
+      <!-- User input for the prompt -->
+        <textarea id="journalEntry" placeholder="Type your journal entry here..."></textarea>
+      </div>
+      
+      <button id="saveEntry">Save Entry</button>
+      <div id="savedEntriesContainer">
+        <button id="viewJournal" onclick="location.href='journal.html'" type="button">View your Journal</button>
+      </div>
+    </section>
+
+    <!-- Workout Section -->
+    <section id="workout">
+      <h1 id="header">Interested in a fun workout?</h1>
+      <p>Get your body moving and your spirits lifted with these energizing dance workouts! Follow along to upbeat music
+        and let loose as you break a sweat. It's a fun way to stay active and boost your mood!</p>
+      <div class="videosContainer">
+        <div class="videoContainer">
+          <h2>Video #1</h2>
+          <a href="https://www.youtube.com/watch?v=1vRto-2MMZo&ab_channel=MadFit" target="_blank">
+            <img id="workoutlady" src="workoutlady.png" width="200" height="200">
+          </a>
+        </div>
+        <div class="videoContainer">
+          <h2>Video #2</h2>
+          <a href="https://www.youtube.com/watch?v=xnDhDaVxNng&ab_channel=growwithjo" target="_blank">
+            <img id="workoutladies" src="workoutladies.png" width="220" height="220">
+          </a>
+        </div>
+        <div class="videoContainer">
+          <h2>Video #3</h2>
+          <a href="https://www.youtube.com/watch?v=RFfbZV3bwys&ab_channel=STEEZY" target="_blank">
+            <img id="dancers" src="dancers.png" width="240" height="240">
+          </a>
+        </div>
+      </div>
+      <img id="sparkle4" src="Sparkle.png" width="400" height="400">
+    </section>
+
+    <!-- Meditation Section  -->
+    <section id="meditation">
+      <h1 id="header">Let's do a Guided Meditation!</h1>
+      <p>Take a moment to relax and center yourself with a guided meditation. Clear your mind, focus on your breath, and
+        allow yourself to find inner peace and tranquility.</p>
+      <div class="videosContainer">
+        <div class="videoContainer">
+          <h2>Video #1</h2>
+          <a href="https://www.youtube.com/watch?v=xv-ejEOogaA&ab_channel=GreatMeditation" target="_blank">
+            <img id="yogalady" src="Yoga_Lady.png" width="300" height="300">
+          </a>
+        </div>
+        <div class="videoContainer">
+          <h2>Video #2</h2>
+          <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ&ab_channel=TheHonestGuys-Meditations-Relaxation"
+            target="_blank">
+            <img id="meditationguy" src="meditationguy.png" width="300" height="300">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote">
+      <img id="sparkle5" src="Sparkle.png" width="400" height="400">
+      <h1 id="header">Remember...</h1>
+      <!-- Quote Container -->
+      <div id="quoteContainer"></div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
